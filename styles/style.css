@@ -269,7 +269,7 @@
   color: #fff;
 }
 
-.staff__list {
+.staff__cards {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -473,6 +473,10 @@
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
+}
+
+.footer__column-link:hover {
+  color: #1f69c9;
 }
 
 .footer__social-icon {
