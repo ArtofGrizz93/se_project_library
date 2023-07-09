@@ -383,7 +383,7 @@
   font-size: 20px;
   line-height: 30px;
   font-weight: 500;
-  z-index: 1;
+  z-index: 0;
   display: flex;
   max-width: 154px;
   position: relative;
@@ -391,21 +391,25 @@
 }
 
 .about__content {
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: 400;
-  max-width: 660px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin: auto;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
 .about__paragraph::after {
   margin-bottom: 0px;
   display: flex;
+}
+
+.about__paragraph {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  max-width: 660px;
 }
 
 .about__circle {
@@ -416,7 +420,7 @@
   position: absolute;
   top: -121px;
   left: -91px;
-  z-index: 0;
+  z-index: -1;
 }
 
 .footer {
