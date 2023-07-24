@@ -2,7 +2,7 @@
   min-width: 1100px;
   max-width: 1600px;
   margin: auto;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica Neue, Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
   background-color: #ffffff;
@@ -21,8 +21,6 @@
 .nav {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 150px;
-  align-items: flex-start;
 }
 
 .logo {
@@ -36,6 +34,7 @@
   margin: 8px 0 0;
   column-gap: 20px;
   align-items: flex-start;
+  padding: 0;
 }
 
 .nav__link {
@@ -57,7 +56,7 @@
   max-width: 544px;
   flex-wrap: wrap;
   align-items: center;
-  margin-top: 150px;
+  margin: 150px 0 0;
 }
 
 .header__description {
@@ -65,9 +64,9 @@
   flex-wrap: wrap;
   font-size: 20px;
   line-height: 30px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica Neue, Arial, sans-serif;
   max-width: 532px;
-  margin-top: 32px;
+  margin: 32px 0 0;
 }
 
 .header__image {
@@ -251,7 +250,7 @@
   padding: 100px 0 140px;
   background-image: url("../images/staff_picks_background.jpg");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
 }
 
 .staff__title {
@@ -340,16 +339,12 @@
   margin: 100px 0 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  flex-basis: auto;
+  justify-content: center;
+  gap: 40px;
 }
 
 .step {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 220px;
-  row-gap: 40px;
-  flex-basis: auto;
+  flex-basis: 220px;
 }
 
 .step__title {
@@ -370,6 +365,8 @@
 }
 
 .about {
+  display: flex;
+  column-gap: 120px;
   padding: 100px 80px;
   background-color: #1f1f1f;
   color: #fff;
@@ -387,7 +384,6 @@
   display: flex;
   max-width: 154px;
   position: relative;
-  top: 50px;
 }
 
 .about__content {
@@ -398,11 +394,6 @@
   margin: 0;
   position: relative;
   z-index: 1;
-}
-
-.about__paragraph::after {
-  margin-bottom: 0px;
-  display: flex;
 }
 
 .about__paragraph {
@@ -469,13 +460,16 @@
 }
 
 .footer__column-heading {
-  display: flex;
   margin: 0;
   padding: 20px 0;
+  font-size: 16px;
 }
 
 .footer__column-link {
   color: white;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
@@ -491,7 +485,5 @@
 }
 
 .footer__copyright {
-  display: flex;
-  position: relative;
-  bottom: 15px;
+  margin: 108px 0 0;
 }
