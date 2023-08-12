@@ -195,6 +195,7 @@
   align-items: center;
   flex-direction: column;
   gap: 10px;
+  margin: 0;
 }
 
 .person_name_feynman {
@@ -390,11 +391,9 @@
 .about__content {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  margin: 0;
   position: relative;
   z-index: 2;
+  gap: 32px;
 }
 
 .about__paragraph {
@@ -402,6 +401,7 @@
   line-height: 30px;
   font-weight: 400;
   max-width: 660px;
+  margin: 0;
 }
 
 .about__circle {
@@ -422,7 +422,7 @@
   font-size: 16px;
   line-height: 20px;
   width: auto;
-  padding: 60px 102px 80px;
+  padding: 60px 102px 60px 80px;
 }
 
 .footer__column {
@@ -462,7 +462,7 @@
 
 .footer__column-heading {
   margin: 0;
-  padding: 20px 0;
+  padding: 0 0 20px;
   font-size: 16px;
 }
 
